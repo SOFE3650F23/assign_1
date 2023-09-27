@@ -1,7 +1,8 @@
-import Q2pkg.*; 
+import Q2_1pkg.*; 
 
 public class TestDriver {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        NoFrills oshawaNoFrills = new NoFrills("Oshawa");
+        System.out.println("Created a NoFrills in " + oshawaNoFrills.location);
     }
 }

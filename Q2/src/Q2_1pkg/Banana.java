@@ -1,8 +1,8 @@
 package Q2_1pkg;
 
 public interface Banana {
-    //use to create concrete Apples
+    //use to create concrete Bananas
 
-    String getName();
+    String getType();
     double getPrice();
 }
