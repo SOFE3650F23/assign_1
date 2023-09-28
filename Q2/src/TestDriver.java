@@ -18,6 +18,45 @@ public class TestDriver {
     
     System.out.println("Price:" + noFrillsTomato.getPrice());
     System.out.println("Price of Banana:" + noFrillsBanana.getPrice());
+
+    System.out.println("Tests-----");
+
+    GroceryProductFactory factory = new NoFrillsFactory("No Frills");
+        Fruit fruit = factory.createBanana(2.99);
+        if (fruit.getPrice() == 2.99) {
+            System.out.println("Test passed");
+        }
+        else {
+            System.out.println("Test failed");
+        }
+
+    
+        if(fruit instanceof Banana) {
+            System.out.println("Test passed");
+        }
+
+        if(!(fruit instanceof Tomato)) {
+            System.out.println("Test passed");
+        }
+
+    GroceryProductFactory factory = new WalmartFactory("Walmart");
+        Fruit fruit = factory.createBanana(12.99);
+        if (fruit.getPrice() == 12.99) {
+            System.out.println("Test passed");
+        }
+        else {
+            System.out.println("Test failed");
+        }
+
+    
+        if(fruit instanceof Banana) {
+            System.out.println("Test passed");
+        }
+
+        if(!(fruit instanceof Tomato)) {
+            System.out.println("Test passed");
+        }
+
     }
 
     //FILE READER METHODS

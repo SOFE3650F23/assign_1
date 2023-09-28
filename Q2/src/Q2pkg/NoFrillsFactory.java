@@ -3,7 +3,7 @@ package Q2pkg;
 public class NoFrillsFactory extends GroceryProductFactory {
     //concrete factory for NoFrills stores
     public String location;
-    public final String store = "NoFrills";
+    public final String STORE = "NoFrills";
 
     public NoFrillsFactory(String l){
         location = l;
