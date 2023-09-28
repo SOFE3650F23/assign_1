@@ -9,7 +9,7 @@ public class FileReader {
         return Files.readAllLines(Paths.get(filePath));
     }
 
-    public Double PriceReader(String path, String name) {
+    public static Double PriceReader(String path, String name) {
         String filePath = path;
         Double price;
 

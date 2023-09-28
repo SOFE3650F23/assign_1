@@ -11,13 +11,13 @@ public class NoFrillsFactory extends GroceryProductFactory {
     }
 
     @Override
-    public Fruit createFruit(){
+    public Fruit createFruit(String n){
         Fruit f = new Fruit();
         return f;
     }
 
     @Override
-    public Veggie createVeggie(){
+    public Veggie createVeggie(String n){
         Veggie v = new Veggie();
         return v;
     }
