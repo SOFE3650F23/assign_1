@@ -8,27 +8,19 @@ import Q2pkg.*;
 
 public class TestDriver {
     public static void main(String[] args) throws Exception {
-        NoFrillsFactory oshawaNoFrills = new NoFrillsFactory("Oshawa");
-        System.out.println("Created a NoFrills in " + oshawaNoFrills.location);
+    NoFrillsFactory oshawaNoFrills = new NoFrillsFactory("Oshawa");
+    System.out.println("Created a NoFrills in " + oshawaNoFrills.location);
+    String noFrillsFile = "NoFrillsPrices.txt";
 
-        /*add stock of all products
-        List<Object> stock = new ArrayList<Object>(); //list of stock of products
-        stock.add(oshawaNoFrills.createVeggie());
-        stock.add(oshawaNoFrills.createFruit());*/
+    Veggie noFrillsTomato = oshawaNoFrills.createTomato(PriceReader(noFrillsFile, "tomato"));
+    Fruit noFrillsBanana = oshawaNoFrills.createBanana(PriceReader(noFrillsFile, "banana"));
 
-    String pathToFile = "NoFrillsPrices.txt";
-    String productName = "tomato";
-
-    Double productPrice = PriceReader(pathToFile, productName);
-
-    if(productPrice != -1.0) {
-        System.out.println("Price for " + productName + " is: " + productPrice);
-    } else {
-        System.out.println("Product not found or error reading price.");
-    }
-        
+    
+    System.out.println("Price:" + noFrillsTomato.getPrice());
+    System.out.println("Price of Banana:" + noFrillsBanana.getPrice());
     }
 
+    //FILE READER METHODS
     public static List<String> readFile(String filePath) throws IOException {
         return Files.readAllLines(Paths.get(filePath));
     }

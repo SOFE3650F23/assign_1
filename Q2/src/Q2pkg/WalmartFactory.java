@@ -1,8 +1,7 @@
 package Q2pkg;
-import java.util.*;
 
 public class WalmartFactory extends GroceryProductFactory {
-    //concrete factory for Walmart stores
+    //concrete factory for NoFrills stores
     public String location;
     public final String store = "Walmart";
 
@@ -11,14 +10,14 @@ public class WalmartFactory extends GroceryProductFactory {
     }
 
     @Override
-    public Fruit createFruit(){
-        Fruit f = new Fruit();
+    public Fruit createBanana(Double price){
+        Fruit f = new Banana(price);
         return f;
     }
 
     @Override
-    public Veggie createVeggie(){
-        Veggie v = new Veggie();
+    public Veggie createTomato(Double price){
+        Veggie v = new Tomato(price);
         return v;
     }
 }

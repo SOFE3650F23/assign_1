@@ -1,24 +1,23 @@
 package Q2pkg;
-import java.util.*;
 
 public class NoFrillsFactory extends GroceryProductFactory {
     //concrete factory for NoFrills stores
     public String location;
-    public final String store = "Walmart";
+    public final String store = "NoFrills";
 
     public NoFrillsFactory(String l){
         location = l;
     }
 
     @Override
-    public Fruit createFruit(String n){
-        Fruit f = new Fruit();
+    public Fruit createBanana(Double price){
+        Fruit f = new Banana(price);
         return f;
     }
 
     @Override
-    public Veggie createVeggie(String n){
-        Veggie v = new Veggie();
+    public Veggie createTomato(Double price){
+        Veggie v = new Tomato(price);
         return v;
     }
 }

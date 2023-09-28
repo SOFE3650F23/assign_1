@@ -2,13 +2,13 @@ package Q2pkg;
 
 public class Tomato implements Veggie{
     public final String name = "Tomato";
-    double price;
+    Double price;
 
-    Tomato(double p){
+    Tomato(Double p){
         price = p;
     }
 
-    public double getPrice(){
+    public Double getPrice(){
         return price;
     }
 }
