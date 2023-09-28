@@ -1,4 +1,4 @@
-package Q2_1pkg;
+package Q2pkg;
 
 public interface Apple {
     //use to create concrete Apples

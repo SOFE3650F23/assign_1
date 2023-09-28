@@ -1,4 +1,4 @@
-package Q2_1pkg;
+package Q2pkg;
 
 public class NoFrills extends GroceryProductFactory {
      Banana b; //list of bananas and apples?

@@ -1,13 +1,13 @@
-package Q2_1pkg;
+package Q2pkg;
 
-public class BabyBanana implements Banana {
-    //use to create concrete Banana
+public class RedApple implements Apple {
+    //use to create concrete Apple
     String type;
     double price;
 
-    BabyBanana(String t){
+    RedApple(String t){
         type = t;
-        price = 2;
+        price = 2.5;
     }
 
     public String getType(){

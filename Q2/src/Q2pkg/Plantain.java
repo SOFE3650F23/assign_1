@@ -1,4 +1,4 @@
-package Q2_1pkg;
+package Q2pkg;
 
 public class Plantain implements Banana {
     //use to create concrete Banana

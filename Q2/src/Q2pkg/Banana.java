@@ -1,15 +1,8 @@
 package Q2pkg;
 
-public class Banana implements Product{
-    String name;
+public interface Banana {
+    //use to create concrete Bananas
 
-    Banana(){
-        name = "Banana";
-    }
-
-    //what about types of bananas? 
-
-    public String getProductName(){
-        return name;
-    }
+    String getType();
+    double getPrice();
 }

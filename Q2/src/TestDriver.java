@@ -1,4 +1,4 @@
-import Q2_1pkg.*; 
+import Q2pkg.*; 
 
 public class TestDriver {
     public static void main(String[] args) throws Exception {

@@ -1,11 +1,11 @@
-package Q2_1pkg;
+package Q2pkg;
 
-public class RedApple implements Apple {
+public class GreenApple implements Apple {
     //use to create concrete Apple
     String type;
     double price;
 
-    RedApple(String t){
+    GreenApple(String t){
         type = t;
         price = 2.5;
     }

@@ -1,4 +1,4 @@
-package Q2_1pkg;
+package Q2pkg;
 
 public abstract class GroceryProductFactory {
     //use to make concrete factories to create Products
