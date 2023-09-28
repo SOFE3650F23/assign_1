@@ -39,8 +39,8 @@ public class TestDriver {
             System.out.println("Test passed");
         }
 
-    GroceryProductFactory factory = new WalmartFactory("Walmart");
-        Fruit fruit = factory.createBanana(12.99);
+     factory = new WalmartFactory("Walmart");
+         fruit = factory.createBanana(12.99);
         if (fruit.getPrice() == 12.99) {
             System.out.println("Test passed");
         }
