@@ -52,4 +52,14 @@ WalmartPrices.txt
 ### Output Examples from TestDriver
 
 ```
+Created a NoFrills in Oshawa
+Price:9.99
+Price of Banana:2.99
+Tests-----
+Test passed
+Test passed
+Test passed
+Test passed
+Test passed
+Test passed
 ```
