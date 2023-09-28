@@ -1,10 +1,10 @@
 package Q2pkg;
 
-public class Banana implements Fruit{
-    public final String name = "Banana";
+public class Tomato implements Veggie{
+    public final String name = "Tomato";
     double price;
 
-    Banana(double p){
+    Tomato(double p){
         price = p;
     }
 
